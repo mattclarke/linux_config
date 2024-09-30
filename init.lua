@@ -683,6 +683,10 @@ vim.keymap.set('v', '<S-Down>', ":m '>+1<CR>gv=gv", { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+-- Shortcut for paste from register 0
+vim.keymap.set('v', '<leader>p', '"0p', { silent = true })
+vim.keymap.set('n', '<leader>p', '"0p', { silent = true })
+
 -- Set cursor to blink
 -- vim.cmd.set('guicursor', 'a:blinkon100')
 
